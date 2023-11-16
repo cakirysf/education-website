@@ -21,4 +21,4 @@
 
 <p>Responsive</p>
 
-![](img/mobile_gif.gif)
+![](images/mobile_gif.gif)
