@@ -1,0 +1,89 @@
+.slider-container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.slide-content h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  background: var(--color-bg1);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.slide-content p {
+  font-size: 1.2em;
+  background: var(--color-danger);
+  padding: 0;
+  border-radius: 1rem;
+}
+
+/* Navigation Buttons */
+.prev,
+.next {
+  position: absolute;
+  top: 35%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background: var(--color-bg2);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Button Hover Effect */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* ===========  MEDIA QUERIES (TABLETS)  ===========  */
+
+@media screen and (max-width: 1024px) {
+  header {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    margin-bottom: 0;
+    height: 40vh;
+  }
+}
